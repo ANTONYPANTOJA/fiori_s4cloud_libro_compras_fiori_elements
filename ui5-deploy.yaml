@@ -1,0 +1,25 @@
+# yaml-language-server: $schema=https://sap.github.io/ui5-tooling/schema/ui5.yaml.json
+
+specVersion: "3.1"
+metadata:
+  name: ns.asa.zappbookpurcharse
+type: application
+builder:
+  resources:
+    excludes:
+      - /test/**
+      - /localService/**
+  customTasks:
+    - name: deploy-to-abap
+      afterTask: generateCachebusterInfo
+      configuration:
+        target:
+          destination: DATEC_S4_CLOUD_DEV
+          url: https://my412302-api.s4hana.cloud.sap
+        app:
+          name: ZBSP_BOOKPURCH
+          description: Reporte Libro de Compras
+          package: ZFIBO
+          transport: JBRK900250
+        exclude:
+          - /test/
