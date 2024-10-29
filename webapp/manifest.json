@@ -150,7 +150,8 @@
               }
             },
             "tableSettings": {
-              "type": "GridTable"
+              "type": "GridTable",
+              "variantManagement": true
             }
           }
         }
