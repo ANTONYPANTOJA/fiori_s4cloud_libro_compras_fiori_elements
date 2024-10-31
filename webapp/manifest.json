@@ -146,12 +146,16 @@
             "filterSettings": {
               "dateSettings": {
                 "useDateRange": true
-
               }
             },
             "tableSettings": {
-              "type": "GridTable",
-              "variantManagement": true
+              "type": "AnalyticalTable",
+              "multiSelect": true,
+              "personalization": {
+                "column": true,
+                "sort": true,
+                "group": true
+              }
             }
           }
         }

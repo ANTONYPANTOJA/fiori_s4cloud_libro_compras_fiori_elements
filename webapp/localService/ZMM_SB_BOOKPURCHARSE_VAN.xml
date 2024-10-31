@@ -21,6 +21,9 @@
     <edmx:Reference Uri="../../catalogservice;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_HTML5',Version='0001',SAP__Origin='')/$value">
         <edmx:Include Namespace="com.sap.vocabularies.HTML5.v1" Alias="HTML5"/>
     </edmx:Reference>
+    <edmx:Reference Uri="../../catalogservice;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_ODM',Version='0001',SAP__Origin='')/$value">
+        <edmx:Include Namespace="com.sap.vocabularies.ODM.v1" Alias="SAP__ODM"/>
+    </edmx:Reference>
     <edmx:Reference Uri="../../../sap/zmm_sb_bookpurcharse/$metadata">
         <edmx:Include Namespace="ZMM_SB_BOOKPURCHARSE" Alias="SAP"/>
     </edmx:Reference>
@@ -48,6 +51,9 @@
                 <Annotation Term="UI.HiddenFilter"/>
             </Annotations>
             <Annotations Target="cds_zmm_sd_bookpurcharse.BookPurcharseType/FechaFacturaDuim">
+                <Annotation Term="UI.HiddenFilter"/>
+            </Annotations>
+            <Annotations Target="cds_zmm_sd_bookpurcharse.BookPurcharseType/FechaFacturaAux">
                 <Annotation Term="UI.HiddenFilter"/>
             </Annotations>
             <Annotations Target="cds_zmm_sd_bookpurcharse.BookPurcharseType/ImporteTotalCompra">
@@ -278,6 +284,11 @@
                         <Record Type="UI.DataField">
                             <PropertyValue Property="Value" Path="RazonSocialProveedor"/>
                             <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High"/>
+                            <Annotation Term="HTML5.CssDefaults">
+                                <Record>
+                                    <PropertyValue Property="width" String="20rem"/>
+                                </Record>
+                            </Annotation>
                         </Record>
                         <Record Type="UI.DataField">
                             <PropertyValue Property="Value" Path="CodeAutorizacion"/>
@@ -406,6 +417,44 @@
                         </Record>
                     </Collection>
                 </Annotation>
+                <Annotation Term="UI.PresentationVariant">
+                    <Record>
+                        <PropertyValue Property="SortOrder">
+                            <Collection>
+                                <Record Type="Common.SortOrderType">
+                                    <PropertyValue Property="Property" PropertyPath="FechaFacturaAux"/>
+                                    <PropertyValue Property="Descending" Bool="false"/>
+                                </Record>
+                                <Record Type="Common.SortOrderType">
+                                    <PropertyValue Property="Property" PropertyPath="NitProveedor"/>
+                                    <PropertyValue Property="Descending" Bool="false"/>
+                                </Record>
+                                <Record Type="Common.SortOrderType">
+                                    <PropertyValue Property="Property" PropertyPath="NumeroFactura"/>
+                                    <PropertyValue Property="Descending" Bool="false"/>
+                                </Record>
+                            </Collection>
+                        </PropertyValue>
+                        <PropertyValue Property="GroupBy">
+                            <Collection>
+                                <PropertyPath>NumeroFactura</PropertyPath>
+                                <PropertyPath>NitProveedor</PropertyPath>
+                            </Collection>
+                        </PropertyValue>
+                        <PropertyValue Property="RequestAtLeast">
+                            <Collection>
+                                <PropertyPath>NumeroFactura</PropertyPath>
+                                <PropertyPath>NitProveedor</PropertyPath>
+                                <PropertyPath>FechaFacturaAux</PropertyPath>
+                            </Collection>
+                        </PropertyValue>
+                        <PropertyValue Property="Visualizations">
+                            <Collection>
+                                <AnnotationPath>@UI.LineItem</AnnotationPath>
+                            </Collection>
+                        </PropertyValue>
+                    </Record>
+                </Annotation>
                 <Annotation Term="UI.SelectionFields">
                     <Collection>
                         <PropertyPath>CompanyCode</PropertyPath>
@@ -428,6 +477,7 @@
                     </Collection>
                 </Annotation>
             </Annotations>
+            <Annotations Target="_Entities"/>
         </Schema>
     </edmx:DataServices>
 </edmx:Edmx>
