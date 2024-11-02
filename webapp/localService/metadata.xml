@@ -122,6 +122,7 @@
                 <Property Name="TaxCodeIpj" Type="Edm.String" MaxLength="2" sap:required-in-filter="true" sap:label="Indicador IPJ"/>
                 <Property Name="TaxCodeTasas" Type="Edm.String" MaxLength="2" sap:required-in-filter="true" sap:label="Indicador Tasas"/>
                 <Property Name="TaxCodeDscto" Type="Edm.String" MaxLength="2" sap:required-in-filter="true" sap:label="Indicador Dscto"/>
+                <Property Name="TaxCodeGc" Type="Edm.String" MaxLength="2" sap:required-in-filter="true" sap:label="Indicador GC"/>
                 <Property Name="CtaCreditoFiscal" Type="Edm.String" MaxLength="10" sap:required-in-filter="true" sap:label="Cta.Credit Fiscal" sap:value-list="standard"/>
                 <Property Name="CtaDebitoFiscal" Type="Edm.String" MaxLength="10" sap:required-in-filter="true" sap:label="Cta.Debit Fiscal" sap:value-list="standard"/>
                 <Property Name="CtaCajaChica" Type="Edm.String" MaxLength="10" sap:required-in-filter="true" sap:label="Cta.Caja Chica" sap:value-list="standard"/>
@@ -591,6 +592,7 @@
                                 <PropertyPath>TaxCodeIpj</PropertyPath>
                                 <PropertyPath>TaxCodeTasas</PropertyPath>
                                 <PropertyPath>TaxCodeDscto</PropertyPath>
+                                <PropertyPath>TaxCodeGc</PropertyPath>
                                 <PropertyPath>CtaCreditoFiscal</PropertyPath>
                                 <PropertyPath>CtaDebitoFiscal</PropertyPath>
                                 <PropertyPath>CtaCajaChica</PropertyPath>
@@ -692,6 +694,9 @@
             </Annotations>
             <Annotations Target="cds_zmm_sd_bookpurcharse.BookPurcharseType/TaxCodeDscto" xmlns="http://docs.oasis-open.org/odata/ns/edm">
                 <Annotation Term="Common.FilterDefaultValue" String="C8"/>
+            </Annotations>
+            <Annotations Target="cds_zmm_sd_bookpurcharse.BookPurcharseType/TaxCodeGc" xmlns="http://docs.oasis-open.org/odata/ns/edm">
+                <Annotation Term="Common.FilterDefaultValue" String="C9"/>
             </Annotations>
             <Annotations Target="cds_zmm_sd_bookpurcharse.cds_zmm_sd_bookpurcharse_Entities" xmlns="http://docs.oasis-open.org/odata/ns/edm">
                 <Annotation Term="Org.OData.Capabilities.V1.BatchSupport">

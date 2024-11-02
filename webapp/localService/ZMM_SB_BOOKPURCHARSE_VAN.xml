@@ -471,6 +471,7 @@
                         <PropertyPath>TaxCodeIpj</PropertyPath>
                         <PropertyPath>TaxCodeTasas</PropertyPath>
                         <PropertyPath>TaxCodeDscto</PropertyPath>
+                        <PropertyPath>TaxCodeGc</PropertyPath>
                         <PropertyPath>CtaCreditoFiscal</PropertyPath>
                         <PropertyPath>CtaDebitoFiscal</PropertyPath>
                         <PropertyPath>CtaCajaChica</PropertyPath>

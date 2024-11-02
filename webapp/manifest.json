@@ -88,6 +88,15 @@
         "sap.suite.ui.generic.template": {}
       }
     },
+    "extends": {
+      "extensions": {
+        "sap.ui.controllerExtensions": {
+          "sap.suite.ui.generic.template.ListReport.view.ListReport": {
+            "controllerName": "ns.asa.zappbookpurcharse.controller.ListReportExt"
+          }
+        }
+      }
+    },
     "contentDensities": {
       "compact": true,
       "cozy": true
@@ -149,21 +158,15 @@
               }
             },
             "tableSettings": {
-              "type": "AnalyticalTable",
-              "multiSelect": true,
-              "personalization": {
-                "column": true,
-                "sort": true,
-                "group": true
-              }
+              "type": "GridTable",
+              "copy": true,
+              "multiSelect": true
             }
           }
         }
-        
       }
     }
-  }
-  ,
+  },
   "sap.fiori": {
     "registrationIds": [],
     "archeType": "transactional"

@@ -1,0 +1,41 @@
+{
+    "fileName": "id_1730518309025_162_propertyChange",
+    "fileType": "change",
+    "changeType": "propertyChange",
+    "moduleName": "",
+    "reference": "ns.asa.zappbookpurcharse",
+    "packageName": "",
+    "content": {
+        "property": "exportType",
+        "newValue": "GW"
+    },
+    "selector": {
+        "id": "ns.asa.zappbookpurcharse::sap.suite.ui.generic.template.ListReport.view.ListReport::BookPurcharse--listReport",
+        "idIsLocal": false,
+        "type": "sap.ui.comp.smarttable.SmartTable"
+    },
+    "layer": "CUSTOMER_BASE",
+    "texts": {},
+    "namespace": "apps/ns.asa.zappbookpurcharse/changes/",
+    "projectId": "",
+    "creation": 1730518324328,
+    "originalLanguage": "",
+    "support": {
+        "generator": "changeUtils: SAPFioriTools",
+        "service": "",
+        "user": "",
+        "sapui5Version": "1.120.17",
+        "sourceChangeFileName": "",
+        "compositeCommand": ""
+    },
+    "oDataInformation": {},
+    "dependentSelector": {},
+    "validAppVersions": {
+        "from": "0.0.1",
+        "to": "0.0.1",
+        "creation": "0.0.1"
+    },
+    "jsOnly": false,
+    "variantReference": "",
+    "appDescriptorChange": false
+}
