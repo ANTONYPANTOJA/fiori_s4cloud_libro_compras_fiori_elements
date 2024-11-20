@@ -92,15 +92,15 @@
                 <Property Name="ImporteCompras" Type="Edm.Decimal" Precision="23" Scale="2" sap:label="Importe tasa cero"/>
                 <Property Name="Subtotal" Type="Edm.Decimal" Precision="23" Scale="2" sap:label="Subtotal"/>
                 <Property Name="DsctoBonif" Type="Edm.Decimal" Precision="23" Scale="2" sap:label="Dsctos/bonif/rebajas"/>
-                <Property Name="ImportGiftCard" Type="Edm.Decimal" Precision="23" Scale="2" sap:label="Importe gift Card"/>
+                <Property Name="ImportGiftCard" Type="Edm.Decimal" Precision="23" Scale="2" sap:label="Importe gift card"/>
                 <Property Name="ImportBaseCf" Type="Edm.Decimal" Precision="23" Scale="2" sap:label="Importe base CF"/>
                 <Property Name="CreditoFiscal" Type="Edm.Decimal" Precision="23" Scale="2" sap:label="Crédito fiscal"/>
                 <Property Name="TipoCompra" Type="Edm.String" MaxLength="1" sap:label="Tipo compra"/>
                 <Property Name="CodeControl" Type="Edm.String" MaxLength="25" sap:label="Código de control"/>
                 <Property Name="CreditoFiscalSap" Type="Edm.Decimal" Precision="23" Scale="2" sap:label="Crédito fiscal SAP"/>
                 <Property Name="DiferenciaIva" Type="Edm.Decimal" Precision="23" Scale="2" sap:label="Diferencia IVA"/>
-                <Property Name="NumDocumento" Type="Edm.String" MaxLength="10" sap:label="N° Documento" sap:value-list="standard"/>
-                <Property Name="ClaseDocumento" Type="Edm.String" MaxLength="2" sap:label="Cl. Doc"/>
+                <Property Name="NumDocumento" Type="Edm.String" MaxLength="10" sap:label="N° documento" sap:value-list="standard"/>
+                <Property Name="ClaseDocumento" Type="Edm.String" MaxLength="2" sap:label="Cl.Doc."/>
                 <Property Name="Proveedor" Type="Edm.String" MaxLength="10" sap:label="Proveedor"/>
                 <Property Name="Glosa" Type="Edm.String" MaxLength="50" sap:label="Glosa"/>
                 <Property Name="FechaContab" Type="Edm.String" MaxLength="10" sap:label="Fecha contab."/>
@@ -414,7 +414,7 @@
             <Annotations Target="cds_zmm_sd_bookpurcharse.BookPurcharseType/NumDocumento" xmlns="http://docs.oasis-open.org/odata/ns/edm">
                 <Annotation Term="Common.ValueList">
                     <Record>
-                        <PropertyValue Property="Label" String="N° Documento"/>
+                        <PropertyValue Property="Label" String="N° documento"/>
                         <PropertyValue Property="CollectionPath" String="I_JournalEntryStdVH"/>
                         <PropertyValue Property="SearchSupported" Bool="true"/>
                         <PropertyValue Property="Parameters">
