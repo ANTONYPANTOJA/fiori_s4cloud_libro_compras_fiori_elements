@@ -17,6 +17,25 @@ function (Controller) {
                     console.error("Error Function: OnInit ",error);
                 }
             }
+
+            //model
+            const model = this.getOwnerComponent().getModel();
+            if (model) {
+                
+            }
         },
+        onBeforeRebindTableExtension: function(oEvent){
+            if (oEvent) {
+                
+            }
+        },    
+        onBeforeRebindTable: function(oEvent){
+
+        },
+        onBeforeExcelExport: function(oEvent){
+            if (oEvent) {
+                
+            }
+        }
     };
 });        
