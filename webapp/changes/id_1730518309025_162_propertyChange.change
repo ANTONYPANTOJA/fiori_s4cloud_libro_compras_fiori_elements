@@ -7,7 +7,7 @@
     "packageName": "",
     "content": {
         "property": "exportType",
-        "newValue": "GW"
+        "newValue": "UI5Client"
     },
     "selector": {
         "id": "ns.asa.zappbookpurcharse::sap.suite.ui.generic.template.ListReport.view.ListReport::BookPurcharse--listReport",
@@ -18,7 +18,7 @@
     "texts": {},
     "namespace": "apps/ns.asa.zappbookpurcharse/changes/",
     "projectId": "",
-    "creation": 1730518324328,
+    "creation": 1732405251405,
     "originalLanguage": "",
     "support": {
         "generator": "changeUtils: SAPFioriTools",
