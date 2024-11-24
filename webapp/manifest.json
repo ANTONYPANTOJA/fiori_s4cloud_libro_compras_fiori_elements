@@ -92,20 +92,7 @@
             "extensions": {
                 "sap.ui.controllerExtensions": {
                     "sap.suite.ui.generic.template.ListReport.view.ListReport": {
-                        "controllerName": "ns.asa.zappbookpurcharse.controller.ListReportExt",
-                        "sap.ui.generic.app": {
-                            "ZreportInfAccRes": {
-                                "EntitySet": "BookPurcharse",
-                                "Actions": {
-                                    "postAction": {
-                                      "id": "postAction",
-                                      "text": "Descargar Excel",
-                                      "press": "postExcel",
-                                      "requiresSelection": false
-                                  }
-                                }
-                            }
-                        }
+                        "controllerName": "ns.asa.zappbookpurcharse.controller.ListReportExt"
                     }
                 }
             }
