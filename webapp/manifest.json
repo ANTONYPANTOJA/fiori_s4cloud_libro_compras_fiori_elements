@@ -161,9 +161,8 @@
                             "type": "GridTable",
                             "copy": true,
                             "multiSelect": true,
-                            "selectionMode": "Multi",
-                            "selectAll": false,
-                            "smartVariantManagement": true,
+                            "selectionMode": "MultiToggle",
+                            "selectAll": true,
                             "growing": false,
                             "growingThreshold": 1000000,
                             "selectionLimit": 1000000

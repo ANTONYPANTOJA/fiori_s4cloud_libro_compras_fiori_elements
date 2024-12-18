@@ -22,6 +22,14 @@ function (Controller) {
             let gridTable = this.getView().byId("ns.asa.zappbookpurcharse::sap.suite.ui.generic.template.ListReport.view.ListReport::BookPurcharse--GridTable");
             if (gridTable) {
                 gridTable.setThreshold(1000000);
+                //Setear el plugin del grittable
+                try {
+                    const plugin = gridTable._getSelectionPlugin();
+                    plugin.setSelectionMode("MultiToggle");
+                    console.info(gridTable.getSelectionMode());
+                } catch (error) {
+                    console.error(error);
+                }
             }
         },
         onBeforeRendering: function(){
